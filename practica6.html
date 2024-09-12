@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		let hs=prompt("hora de salida: ");
+		let he=prompt("hora de entrada: ");
+		let tp;
+		let hc;
+		let d;
+		let t;
+		let tc;	
+		d=hs-he;
+		t=d%1;
+		if(t==0){
+			tc=d;
+		}
+		else{
+		tc=(d-t)+1
+		}
+		tp=tc*50;
+		document.write("hora de salida: " + hs + "<br>");
+		document.write("hora de entrada: " + he + "<br>");
+		document.write("duracion: " + d + "<br>");
+		document.write("horas acobrar: " + tc + "<br>");
+		document.write("total a pagar: " + tp);
+	</script>
+</body>
+</html>
